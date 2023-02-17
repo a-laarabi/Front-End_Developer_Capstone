@@ -1,10 +1,16 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import BookingPage from './components/BookingPage';
+import HomePage from './components/Homepage';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Front-End Developer Capstone</h1>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/booking" element={<BookingPage />}></Route>
+      </Routes>
+    </>
   );
 }
 
